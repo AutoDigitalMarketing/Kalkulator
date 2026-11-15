@@ -479,19 +479,7 @@
                 summaryCity.textContent = city;
 
                 // Generisanje Teksta Poruke
-                const rawMessage = `Poštovani, želio/la bih ponudu za proizvod sa Vašeg sajta:\n\n` +
-                    `• Tip Proizvoda: ${type} (${unitPrice.toFixed(2)} €/m²)\n` +
-                    `• Dužina Proizvoda: ${length} m\n` +
-                    `• Visina proizvoda: ${heightText}\n` +
-                    `• Ukupna površina: ${area.toFixed(2)} m²\n` +
-                    `• Boja: ${color}\n` +
-                    `• Dostava (+20%): ${delivery}\n` +
-                    `• Ugradnja: ${installation}\n` +
-                    `• Dodatna opcija 1: ${pedestrianGate}\n` +
-                    `• Dodatna opcija 2: ${driveGate}\n` +
-                    `• Grad: ${city}\n` +
-                    `• Procijenjena cijena: ${totalPrice.toFixed(2)} €\n\n` +
-                    `Molim vas za potvrdu. Hvala!`;
+               const rawMessage = `Poštovani, molim procjenu za ${type}, ${length}m x ${heightText}, ukupno dimenzija ${area.toFixed(2)} m², ${color}, dostava: ${delivery}, ugradnja: ${installation}, dodatna opcija1: ${pedestrianGate}, dodatna opcija2: ${driveGate}) za grad ${city}, po procijenjenoj cijeni od ${totalPrice.toFixed(2)} €.`;
 
                 const encodedMessage = encodeURIComponent(rawMessage);
 
